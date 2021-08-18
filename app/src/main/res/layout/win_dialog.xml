@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+
+    app:cardElevation="20dp"
+    app:cardCornerRadius="20dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/winDialog_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ahmadjon win"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:padding="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Again"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="@font/aldrich"
+        android:background="@drawable/button_background"
+        android:layout_margin="12dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/main_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:fontFamily="@font/aldrich"
+        android:background="@drawable/button_background"
+        android:layout_margin="12dp"/>
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
