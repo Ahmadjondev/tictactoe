@@ -200,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
             imgPlayerTurn.setRotationY(0f);
         } else {
             playerOneLayout.setCardBackgroundColor(Color.WHITE);
-            playerOneLayout.setCardBackgroundColor(Color.parseColor("#FF018786"));
+            playerTwoLayout.setCardBackgroundColor(Color.parseColor("#FF018786"));
             imgPlayerTurn.setRotationY(180f);
         }
     }
