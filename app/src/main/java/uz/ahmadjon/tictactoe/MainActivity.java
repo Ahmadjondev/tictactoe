@@ -1,8 +1,10 @@
 package uz.ahmadjon.tictactoe;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -246,6 +248,19 @@ public class MainActivity extends AppCompatActivity {
         btn8.setImageResource(0);
         btn9.setImageResource(0);
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this,R.style.Theme_MaterialComponents_DayNight_Dialog_Alert);
+        dialog.setTitle("Exit");
+        dialog.setMessage("Are You Exit?");
+        dialog.setPositiveButton("Yes", (dialog12, which) -> {
+            playerOneBall = 0;
+            playerTwoBall = 0;
+            finish();
+        }).setNegativeButton("No", (dialog1, which) -> dialog1.dismiss());
+        dialog.show();
     }
 }
 //Ahmadjon Developer
